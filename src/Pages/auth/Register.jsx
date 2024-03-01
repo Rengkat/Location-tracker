@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import './Login.css'; // import CSS file for styling
+import './Register.css'; // import CSS file for styling
 
 const Register = () => {
   const [firstName, setFirstName] = useState('');
@@ -9,7 +9,7 @@ const Register = () => {
   const [rememberMe, setRememberMe] = useState(false);
 
   const handleRegister = () => {
-    // Implement your registration logic here
+    // registration logic 
     console.log('Registration details:', { firstName, lastName, email, password, rememberMe });
   };
 
