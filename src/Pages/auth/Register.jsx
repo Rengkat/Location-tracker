@@ -16,7 +16,7 @@ const Register = () => {
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" />
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required />
         </div>
         <div className="form-group">
           <label htmlFor="password">Password</label>
