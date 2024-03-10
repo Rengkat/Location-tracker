@@ -1,0 +1,21 @@
+.setting-container {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  width: 50%;
+  padding: 2rem;
+}
+.language,
+.region {
+  margin: 2rem 0;
+}
+.language p,
+.region p {
+  padding: 2rem 0rem;
+  font-size: large;
+}
+.language input,
+.region input {
+  width: 100%;
+  border-radius: 9px;
+  padding: 1rem;
+}
