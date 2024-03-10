@@ -32,8 +32,10 @@
   border-radius: 7px;
 }
 .link.active {
-  background-color: rgb(108, 186, 245);
+  background-color: rgb(8, 127, 219);
+  color: white;
 }
+
 .outlet {
   width: 80%;
   border: 1px solid black;

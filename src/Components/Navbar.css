@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
   padding: 0;
@@ -8,37 +7,51 @@
 }
 .navbar {
   display: flex;
-  top: 0;
   width: 100%;
   height: 7vh;
-  /* line-height: 3vh; */
-  z-index: 3;
   text-align: center;
+  align-items: center;
+}
+.left {
+  width: 50%;
+  display: flex;
+  gap: 9rem;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.right {
+  width: 50%;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: end;
+  gap: 9rem;
+  align-items: center;
 }
 .zidio {
   font-size: 27px;
-  margin: 0rem 2rem 0rem 2rem;
   color: #fff;
   padding-top: 23px;
   cursor: pointer;
+  width: 30%;
 }
 .scr {
   display: flex;
-  margin: 0 3rem 0 5rem;
+  width: 70%;
 }
 .search {
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
   border-radius: 5px;
   border: #fff;
+  width: 60%;
 }
 .search::placeholder {
-    color: #999;
-    font-style: italic;
-    font-size: 14px; 
-  }
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+}
 .btn {
   margin-left: 0.6rem;
-  padding: 0.6rem 0.9rem 0.4rem 0.9rem;
+  padding: 0.6rem 0.8rem;
   border: 1px solid;
   border-radius: 0.3rem;
   color: #fff;
@@ -46,14 +59,13 @@
 }
 .notification {
   display: flex;
-  margin: 0 3rem 0 23rem;
 }
 .not {
   margin-left: 0.6rem;
   padding: 0.6rem 2rem 0.4rem 0.9rem;
   border: 1px solid;
   border-radius: 0.3rem;
-  border: 1.2px solid #000;
+  border: 1.2px ridge #eee;
   color: #fff;
 }
 .not-btn {
@@ -67,27 +79,21 @@
 }
 .user {
   display: flex;
-  margin: 0 3rem 0 0rem;
+  align-items: center;
+  gap: 0.2rem;
+  border: 1.2px solid #eee;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
 }
 .use {
   margin-left: 0.6rem;
-  padding: 0.6rem 0.7rem 0.4rem 1rem;
-  border: 1px solid;
-  border: 1.2px solid #424242;
   color: #fff;
 }
 .pro {
-  margin-right: -0.6rem;
-  padding: 0.3rem 0.5rem 0.3rem 0.4rem;
-  border: 1px solid;
-  border: 1.2px solid #424242;
   color: #fff;
 }
 .caret {
-  margin-left: -0.1rem;
-  padding: 0.6rem 0.5rem 0.2rem 0.5rem;
-  border: 1px solid;
-  border: 1.2px solid #424242;
   color: #fff;
   cursor: pointer;
+  margin-top: 0.2rem;
 }
