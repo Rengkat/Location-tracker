@@ -97,3 +97,43 @@
   cursor: pointer;
   margin-top: 0.2rem;
 }
+@media only screen and (max-width: 767px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+  .left {
+    padding: 0 0rem;
+  }
+  .right {
+    padding: 0 0rem;
+  }
+  .scr {
+    display: none;
+  }
+  .notification {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+  .left {
+    padding: 0 0rem;
+  }
+  .right {
+    padding: 0 0rem;
+  }
+  .scr {
+    display: flex;
+  }
+  .notification {
+    display: flex;
+  }
+  .search {
+    display: flex;
+  }
+}

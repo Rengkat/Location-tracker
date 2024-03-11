@@ -1,0 +1,39 @@
+.mobile {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.mobile-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-link {
+  border: 1px solid white;
+  width: 33.3%;
+  padding: 1rem;
+  border-radius: 7px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(8, 127, 219);
+  color: white;
+}
+.mobile-link.active {
+  background-color: white;
+  color: rgb(8, 127, 219);
+  border: rgb(8, 127, 219) 1px solid;
+}
+/* from table and above */
+@media only screen and (min-width: 768px) {
+  /* Your styles for tablets and above go here */
+  .mobile {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
