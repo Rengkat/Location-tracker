@@ -4,15 +4,22 @@ const GoogleMapComp = () => {
     lat: -3.745,
     lng: -38.523,
   };
+  console.log(import.meta.env.VITE_GOOGLE_MAP_API);
+  const containerStyle = {
+    width: "100%",
+    height: "100vh",
+  };
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "",
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAP_API,
   });
   if (!isLoaded) return <div>Loading...</div>;
-  return (
-    <GoogleMap
-      center={center}
-      zoom={15}
-      mapContainerStyle={{ width: "100%", height: "100%" }}></GoogleMap>
+  return isLoaded ? (
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
+      {/* Child components, such as markers, info windows, etc. */}
+      <></>
+    </GoogleMap>
+  ) : (
+    <></>
   );
 };
 
