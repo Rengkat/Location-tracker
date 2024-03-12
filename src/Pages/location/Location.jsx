@@ -1,5 +1,11 @@
+import GoogleMapComp from "../../Components/GoogleMap";
+
 const Location = () => {
-  return <div>Location</div>;
+  return (
+    <div>
+      <GoogleMapComp />
+    </div>
+  );
 };
 
 export default Location;

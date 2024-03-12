@@ -9,6 +9,7 @@
   background-color: rgb(8, 127, 219);
   padding: 1rem 0;
   position: sticky;
+  z-index: 100;
   top: 0;
 }
 .flex-main {
@@ -32,9 +33,21 @@
   border-radius: 7px;
 }
 .link.active {
-  background-color: rgb(108, 186, 245);
+  background-color: rgb(8, 127, 219);
+  color: white;
 }
+
 .outlet {
-  width: 80%;
-  border: 1px solid black;
+  width: 85%;
+}
+@media only screen and (max-width: 767px) {
+  .flex-main {
+    display: flex;
+    height: 100vh;
+  }
+  .side-bar {
+    display: none;
+    width: 15%;
+    border: 1px solid black;
+  }
 }

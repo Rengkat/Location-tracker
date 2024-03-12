@@ -1,5 +1,11 @@
+import GoogleMapComp from "../../Components/GoogleMap";
+import "./style.css";
 const History = () => {
-  return <div>History</div>;
+  return (
+    <div>
+      <GoogleMapComp />
+    </div>
+  );
 };
 
 export default History;
