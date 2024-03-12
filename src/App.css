@@ -2,9 +2,9 @@
   padding: 0;
   margin: 0;
 }
-.container {
+/* .container {
   box-sizing: border-box;
-}
+} */
 .nav {
   background-color: rgb(8, 127, 219);
   padding: 1rem 0;
