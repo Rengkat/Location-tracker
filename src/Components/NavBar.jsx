@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 // import profile from "./Image/profile.png";
-import { FaUserLarge } from "react-icons/fa6";
+// import { FaUserLarge } from "react-icons/fa6";
 // import { FaUser } from "react-icons/fa";
 import { FaCaretDown } from "react-icons/fa";
 import "./Navbar.css";
@@ -22,7 +22,7 @@ const NavBar = () => {
           <span className="not-btn">4</span>
         </div>
         <div className="user">
-          <img src={profile}  className="pro"/>
+          {/* <img src={profile}  className="pro"/> */}
           <span className="use">User</span>
           <span className="caret"><FaCaretDown/></span>
           {/* <span className="not-btn">4</span> */}
