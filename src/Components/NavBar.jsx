@@ -15,7 +15,12 @@ const NavBar = () => {
             <span className="zidio">Zidio</span>
           </h3>
           <div className="scr">
-            <input className="search" placeholder="search location" type="text" />
+            <div className="search-input">
+              <input className="search" placeholder="search location" type="text" />
+              <span>to</span>
+              <input className="search" placeholder="search location" type="text" />
+            </div>
+
             <span className="btn"> Search</span>
           </div>
         </div>

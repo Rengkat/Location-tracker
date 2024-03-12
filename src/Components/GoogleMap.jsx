@@ -10,7 +10,7 @@ const GoogleMapComp = () => {
     } else {
       console.log("Geolocation is not supported by this browser.");
     }
-  }, []); // Run the effect only once when the component mounts
+  }, []);
 
   function successCallback(position) {
     const latitude = position.coords.latitude;
@@ -27,6 +27,7 @@ const GoogleMapComp = () => {
   const containerStyle = {
     width: "100%",
     height: "100vh",
+    zIndex: "10",
   };
 
   const { isLoaded } = useJsApiLoader({

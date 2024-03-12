@@ -35,14 +35,19 @@
   width: 30%;
 }
 .scr {
-  display: flex;
   width: 70%;
+  color: white;
+}
+.search-input {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 .search {
-  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  padding: 0.6rem;
   border-radius: 5px;
   border: #fff;
-  width: 60%;
+  width: 50%;
 }
 .search::placeholder {
   color: #999;

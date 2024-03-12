@@ -9,6 +9,7 @@
   background-color: rgb(8, 127, 219);
   padding: 1rem 0;
   position: sticky;
+  z-index: 100;
   top: 0;
 }
 .flex-main {
