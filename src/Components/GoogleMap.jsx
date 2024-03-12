@@ -1,22 +1,43 @@
+import { useEffect, useState } from "react";
 import { useJsApiLoader, GoogleMap } from "@react-google-maps/api";
 const GoogleMapComp = () => {
-  const center = {
-    lat: -3.745,
-    lng: -38.523,
-  };
-  console.log(import.meta.env.VITE_GOOGLE_MAP_API);
+  // State to store the current location
+  const [center, setCenter] = useState(null);
+  console.log(center);
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+    } else {
+      console.log("Geolocation is not supported by this browser.");
+    }
+  }, []); // Run the effect only once when the component mounts
+
+  function successCallback(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    // Update the center state with the current location
+    setCenter({ lat: latitude, lng: longitude });
+  }
+
+  function errorCallback(error) {
+    console.log("Error getting location: " + error.message);
+  }
+
   const containerStyle = {
     width: "100%",
     height: "100vh",
   };
+
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAP_API,
   });
+
   if (!isLoaded) return <div>Loading...</div>;
+
   return isLoaded ? (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-      {/* Child components, such as markers, info windows, etc. */}
-      <></>
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
+      {/* Your map components go here */}
     </GoogleMap>
   ) : (
     <></>
