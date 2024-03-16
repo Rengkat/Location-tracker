@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useJsApiLoader, GoogleMap } from "@react-google-maps/api";
+import { useJsApiLoader, GoogleMap, Marker } from "@react-google-maps/api";
 const GoogleMapComp = () => {
   // State to store the current location
   const [center, setCenter] = useState(null);
@@ -32,13 +32,14 @@ const GoogleMapComp = () => {
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAP_API,
+    libraries: ["places", "streetView", "routes"],
   });
 
   if (!isLoaded) return <div>Loading...</div>;
 
   return isLoaded ? (
     <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
-      {/* Your map components go here */}
+      <Marker position={center} />
     </GoogleMap>
   ) : (
     <></>

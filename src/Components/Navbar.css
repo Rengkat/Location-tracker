@@ -47,7 +47,7 @@
   padding: 0.6rem;
   border-radius: 5px;
   border: #fff;
-  width: 50%;
+  width: 10rem;
 }
 .search::placeholder {
   color: #999;

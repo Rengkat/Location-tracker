@@ -1,5 +1,5 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+import { Autocomplete } from "@react-google-maps/api";
+
 // import profile from "./Image/profile.png";
 import { FaUserLarge } from "react-icons/fa6";
 // import { FaUser } from "react-icons/fa";
@@ -16,9 +16,13 @@ const NavBar = () => {
           </h3>
           <div className="scr">
             <div className="search-input">
-              <input className="search" placeholder="search location" type="text" />
+              {/* <Autocomplete> */}
+              <input className="search" placeholder="Origin" type="text" />
+              {/* </Autocomplete> */}
               <span>to</span>
-              <input className="search" placeholder="search location" type="text" />
+              {/* <Autocomplete> */}
+              <input className="search" placeholder="Destination" type="text" />
+              {/* </Autocomplete> */}
             </div>
 
             <span className="btn"> Search</span>
